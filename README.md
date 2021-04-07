@@ -8,5 +8,3 @@ built with -
 1. React.js
 2. Firebase
 3. Material UI
-
-[Live Demo](https://bookstay.netlify.app/)
