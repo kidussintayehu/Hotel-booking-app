@@ -22,9 +22,9 @@ export default function App() {
       <ThemeProviderComp darkMode={darkMode}>
         <AuthContextProvider setDarkMode={setDarkMode}>
           <Suspense fallback={<LoadingSkeleton />}>
-            <QueryClientProvider client={queryClient}>
+            <QueryClientProvider>
               <Routes>
-                <Route path="/" element={<Login />} />
+                <Route path="/login" element={<Login />} />
                 <Route
                   path="/hotels"
                   element={<PrivateRoute component={Home} />}
